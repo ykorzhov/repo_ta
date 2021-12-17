@@ -4,4 +4,4 @@ line3
 task1-adding new line
 removed line 2 and added this
 line6
-lin7e
+line7
