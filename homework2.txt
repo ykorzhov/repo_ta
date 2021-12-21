@@ -1,2 +1,3 @@
 line1
 added line 2 in branch1
+added line 3 in branch2
