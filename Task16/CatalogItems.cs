@@ -32,21 +32,30 @@ namespace Task16
             appsArray = new App[] { app1, app2, app3 };
         }
 
-
+        int index = 1;
         public virtual void ShowMusicFiles()
         {
             foreach (var musicFile in musicArray)
-                Console.WriteLine(musicFile.ToString());
+            {
+                Console.WriteLine($"{index}. {musicFile.ToString()}");
+                index++;
+            }
         }
         public void ShowFilms()
         {
             foreach (var filmFile in filmArray)
-                Console.WriteLine(filmFile.ToString());
+            {
+                Console.WriteLine($"{index}. {filmFile.ToString()}");
+                index++;
+            }
         }
         public void ShowApps()
         {
             foreach (var appFile in appsArray)
-                Console.WriteLine(appFile.ToString());
+            {
+                Console.WriteLine($"{index}. {appFile.ToString()}");
+                index++;
+            }
         }
         
     }

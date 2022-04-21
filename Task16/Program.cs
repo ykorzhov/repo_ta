@@ -19,7 +19,7 @@ namespace Task16
                 showMenu = MainMenu();
             }
 
-            //exit  - entry and exit should be the same point 
+            // entry and exit should be the same point 
         }
         private static bool MainMenu()
         {
@@ -40,14 +40,13 @@ namespace Task16
                         ShowCategoriesMenu = ShowCategories();
                     }
                     //add a loop here as main menu loop
-                    //ShowCategories();
                     return true;
                 case "2":
                     SubmitOrder();
                     return false;
                 case "3":
                     CancelOrder();
-                    return true;
+                    return false;
                 case "4":
                     return false;
                 default:
@@ -75,36 +74,33 @@ namespace Task16
                     Console.Clear();
                     catalogItem.ShowFilms();
                     SelectItem(catalogItem.filmArray);
+                    showCategories = true;
                     break;
                 case "3":
                     Console.Clear();
                     catalogItem.ShowApps();
                     SelectItem(catalogItem.appsArray);
+                    showCategories = true;
                     break;
                 case "4":
                     Console.Clear();
-
-                    //
-                    MainMenu();
+                    showCategories = false;
                     break;
+                default:
+                    return true;
             }
-
-            // TODO: return bool
-            //return Console.ReadLine();
             return showCategories;
         }
 
         public static void SelectItem(File[] array)
         {
-            Console.WriteLine("Enter the item number to add it to cart of press anything else to return to the previous menu");
+            Console.WriteLine("Enter the item number to add it to cart OR press 0 to return to the previous menu");
             var userchoice = Convert.ToInt32(Console.ReadLine());
-            if (userchoice > array.Length)
+            if (userchoice > array.Length || userchoice == 0)
                 return;
             selectedItems.Add(array[userchoice - 1]);
             Console.WriteLine("The item successfully added to your cart! Press Enter to go back to categories.");
             Console.ReadKey();
-            //ShowCategories();
-
         }
 
         public static void SubmitOrder()
@@ -119,7 +115,6 @@ namespace Task16
                 }
                 Console.WriteLine("Press any button to exit.");
                 Console.ReadKey();
-                Environment.Exit(0);
             }
 
 
