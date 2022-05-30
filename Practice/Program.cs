@@ -26,9 +26,9 @@ namespace Practice
             //5 Check whether the entered year is a leap. 
             Console.WriteLine("Enter a year");
             int year = Convert.ToInt32(Console.ReadLine());
-            if( year % 4 == 0)
+            if (year % 4 == 0)
             {
-                    Console.WriteLine($"{year} is a leap year");
+                Console.WriteLine($"{year} is a leap year");
             }
             else
             {
@@ -37,15 +37,15 @@ namespace Practice
             Console.ReadKey();
 
             ////6 Find the sum of the digits of the entered integer number;
-            Console.WriteLine("Enter an integer:");
-            int enteredInt = Convert.ToInt32(Console.ReadLine());
-            int sum = 0;
-            while (enteredInt !=0)
-            {
-                sum += enteredInt[i];
-            }
-            Console.WriteLine($"{sum}");
-            Console.ReadLine();
+            //Console.WriteLine("Enter an integer:");
+            //int enteredInt = Convert.ToInt32(Console.ReadLine());
+            //int sum = 0;
+            //while (enteredInt != 0)
+            //{
+            //    sum += enteredInt[i];
+            //}
+            //Console.WriteLine($"{sum}");
+            //Console.ReadLine();
 
             ////7 Check whether the entered integer numbers contains only odd numbers
             //Console.WriteLine("Enter an integer");

@@ -10,19 +10,19 @@ namespace ExceptionHandling
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("...");
-            try
-            {
-                var a = b / 0;
+            //Console.WriteLine("...");
+            //try
+            //{
+            //    var a = b / 0;
 
-                Console.WriteLine($"a = {a}");
-            }
-            finally
-            {
-                Console.WriteLine("Some msg.");
+            //    Console.WriteLine($"a = {a}");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Some msg.");
 
 
-            }
+            //}
         }
     }
 }
