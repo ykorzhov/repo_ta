@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ytest", "Ytest\Ytest.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{48D8211B-F688-4F40-96DE-B73F23E98285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODD_Demo", "ODD_Demo\ODD_Demo.csproj", "{37B57213-310A-4B3E-BDF0-4DCF9631E3DF}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegatesDemo", "EventsAndDelegatesDemo\EventsAndDelegatesDemo.csproj", "{3FD1BE6C-045F-466D-A62E-C0DEBEACE531}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitAsserts.Demo", "NUnitAsserts.Demo\NUnitAsserts.Demo.csproj", "{3E90A916-71A5-4E8B-8DB4-B693D84DD3EB}"
@@ -103,6 +105,10 @@ Global
 		{48D8211B-F688-4F40-96DE-B73F23E98285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D8211B-F688-4F40-96DE-B73F23E98285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D8211B-F688-4F40-96DE-B73F23E98285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B57213-310A-4B3E-BDF0-4DCF9631E3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B57213-310A-4B3E-BDF0-4DCF9631E3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B57213-310A-4B3E-BDF0-4DCF9631E3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B57213-310A-4B3E-BDF0-4DCF9631E3DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3FD1BE6C-045F-466D-A62E-C0DEBEACE531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3FD1BE6C-045F-466D-A62E-C0DEBEACE531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FD1BE6C-045F-466D-A62E-C0DEBEACE531}.Release|Any CPU.ActiveCfg = Release|Any CPU

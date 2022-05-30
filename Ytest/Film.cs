@@ -11,7 +11,8 @@ namespace Ytest
         protected string Director;
         protected string LeadingActor;
         protected string MainActress;
-        public Film(string name, int code, string category, string size, string director, string leadingActor, string mainActress) : base(name, code, category, size)
+        public Film(string name, int code, string category, string size, string director, string leadingActor, string mainActress)
+            //: base(name, code, category, size)
         {
             this.Director = director;
             this.LeadingActor = leadingActor;
