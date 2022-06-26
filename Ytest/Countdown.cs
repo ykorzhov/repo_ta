@@ -4,18 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventsAndDelegates
+namespace Ytest
 {
-    class Program
+    internal class Countdown
     {
-        static void Main(string[] args)
-        {
-        
-        }
-
     }
 }
-
-
-
-
