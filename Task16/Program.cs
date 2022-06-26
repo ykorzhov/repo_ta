@@ -10,7 +10,6 @@ namespace Task16
     {
         static List<File> selectedItems = new List<File>();
 
-
         static void Main(string[] args)
         {
             bool showMenu = true;
@@ -18,7 +17,6 @@ namespace Task16
             {
                 showMenu = MainMenu();
             }
-
             // entry and exit should be the same point 
         }
         private static bool MainMenu()
@@ -34,6 +32,7 @@ namespace Task16
             switch (Console.ReadLine())
             {
                 case "1":
+                    
                     bool ShowCategoriesMenu = true;
                     while (ShowCategoriesMenu)
                     {
@@ -57,7 +56,7 @@ namespace Task16
         public static bool ShowCategories()
         {
             Console.Clear();
-            Console.WriteLine("Categories: \r\n1. Music \r\n2. Films \r\n3. Apps\r\n4. Return to Main menu\r\n");
+            Console.WriteLine("Categories: \r\n1. Music \r\n2. Films \r\n3. Apps \r\n4. Return to Main menu\r\n");
             Console.WriteLine("Select a category (enter its number):");
             var catalogItem = new CatalogItems();
 
@@ -113,10 +112,15 @@ namespace Task16
                 {
                     Console.WriteLine(item);
                 }
+                //цикл foreach тільки для read only операцій! натомість в циклі for можна і доступитись до елементу, і змінити його. 
+
+                //for (int i = 0; i < selectedItems.Count; i++)
+                //{
+                //    Console.WriteLine(selectedItems[i]);
+                //}
                 Console.WriteLine("Press any button to exit.");
                 Console.ReadKey();
             }
-
 
             else
             {

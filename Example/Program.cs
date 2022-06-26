@@ -1,74 +1,50 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QExample
+namespace OOD
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool showMenu = true;
-            while (showMenu)
-            {
-                showMenu = MainMenu();
-            }
-        }
-        private static bool MainMenu()
-        {
-            Console.Clear();
-            Console.WriteLine("Choose an option:");
-            Console.WriteLine("1) Reverse String");
-            Console.WriteLine("2) Remove Whitespace");
-            Console.WriteLine("3) Exit");
-            Console.Write("\r\nSelect an option: ");
+            Circle circle = new Circle()
+            { Name = "Circle" };
+            Console.WriteLine($"What is the color of {circle.Name}?");
+            circle.Color = Console.ReadLine();
+            Console.WriteLine($"What is the radius of {circle.Name}?");
+            circle.Radius = Convert.ToDouble(Console.ReadLine());
 
-            switch (Console.ReadLine())
-            {
-                case "1":
-                    ReverseString();
-                    return true;
-                case "2":
-                    RemoveWhitespace();
-                    return true;
-                case "3":
-                    return false;
-                default:
-                    return true;
-            }
-        }
+            Square square = new Square()
+            { Name = "Square" };
+            Console.WriteLine($"What is the color of {square.Name}?");
+            square.Color = Console.ReadLine();
+            Console.WriteLine($"What is the side of {square.Name}?");
+            square.Side = Convert.ToDouble(Console.ReadLine());
 
-        private static string CaptureInput()
-        {
-            Console.Write("Enter the string you want to modify: ");
-            return Console.ReadLine();
-        }
+            Rectangle rectangle = new Rectangle()
+            { Name = "Rectangle" };
+            Console.WriteLine($"What is the color of {rectangle.Name}?");
+            rectangle.Color = Console.ReadLine();
+            Console.WriteLine($"What is the lenght of {rectangle.Name}?");
+            rectangle.Length = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"What is the width of {rectangle.Name}?");
+            rectangle.Width = Convert.ToDouble(Console.ReadLine());
 
-        private static void ReverseString()
-        {
-            Console.Clear();
-            Console.WriteLine("Reverse String");
 
-            char[] charArray = CaptureInput().ToCharArray();
-            Array.Reverse(charArray);
-            DisplayResult(String.Concat(charArray));
-        }
-
-        private static void RemoveWhitespace()
-        {
-            Console.Clear();
-            Console.WriteLine("Remove Whitespace");
-
-            DisplayResult(CaptureInput().Replace(" ", ""));
-        }
-
-        private static void DisplayResult(string message)
-        {
-            Console.WriteLine($"\r\nYour modified string is: {message}");
-            Console.Write("\r\nPress Enter to return to Main Menu");
+            Console.WriteLine($"{circle.Name} is {circle.Color}, its area is {circle.Area()}");
+            Console.WriteLine($"{square.Name} is {square.Color}, its area is {square.Area()}");
+            Console.WriteLine($"{rectangle.Name} is {rectangle.Color}, its area is {rectangle.Area()}");
             Console.ReadLine();
+
+            Figure figure = new Circle();
+            (figure as Circle).Radius = 10; //безпечне приведення до типу (якщо не можна привести, то результат приведення буде null) -- 
+            ((Circle)figure).Radius = 10; //якщо не можна привести, ми отримаємо ексепшн, тому небезпечне :) -- explicit casting
+
+
         }
     }
 }
