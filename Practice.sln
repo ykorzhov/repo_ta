@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.32126.317
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndLoops", "ConsoleApp1\ArraysAndLoops.csproj", "{E764428D-1585-4562-A5DD-D945BE97C3EA}"
 EndProject
@@ -27,9 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueAndStack", "QueueAndSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtasks", "LINQtasks\LINQtasks.csproj", "{628823C8-ADCB-4601-A3C0-05606C945C45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QExample", "Example\QExample.csproj", "{60172B49-D4C4-4B49-A615-9F7236A30ECF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOD", "Example\OOD.csproj", "{60172B49-D4C4-4B49-A615-9F7236A30ECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ytest", "Ytest\Ytest.csproj", "{ADEB8304-1856-401B-91A2-893F049407DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "Ytest\EventsAndDelegates.csproj", "{ADEB8304-1856-401B-91A2-893F049407DB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{48D8211B-F688-4F40-96DE-B73F23E98285}"
 EndProject
@@ -39,7 +39,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegatesDemo", "E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnitAsserts.Demo", "NUnitAsserts.Demo\NUnitAsserts.Demo.csproj", "{3E90A916-71A5-4E8B-8DB4-B693D84DD3EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageObject_Demo", "PageObject_Demo\PageObject_Demo.csproj", "{FD449996-8E04-4B33-8D79-68E0238F1F71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PageObject_Demo", "PageObject_Demo\PageObject_Demo.csproj", "{FD449996-8E04-4B33-8D79-68E0238F1F71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOD2", "OOD2\OOD2.csproj", "{D8FE5FEA-26AD-406D-83B0-6217E84768B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOD3", "OOD3\OOD3.csproj", "{A196FCF9-4C1A-4179-ACF3-24F0578D5BAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +127,14 @@ Global
 		{FD449996-8E04-4B33-8D79-68E0238F1F71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD449996-8E04-4B33-8D79-68E0238F1F71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD449996-8E04-4B33-8D79-68E0238F1F71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FE5FEA-26AD-406D-83B0-6217E84768B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FE5FEA-26AD-406D-83B0-6217E84768B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FE5FEA-26AD-406D-83B0-6217E84768B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FE5FEA-26AD-406D-83B0-6217E84768B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A196FCF9-4C1A-4179-ACF3-24F0578D5BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A196FCF9-4C1A-4179-ACF3-24F0578D5BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A196FCF9-4C1A-4179-ACF3-24F0578D5BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A196FCF9-4C1A-4179-ACF3-24F0578D5BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

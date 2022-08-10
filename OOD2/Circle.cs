@@ -4,18 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventsAndDelegates
+namespace OOD2
 {
-    class Program
+    class Circle : Shape
     {
-        static void Main(string[] args)
+        public override void Show()
         {
-        
+            Console.WriteLine("Showing message from child (circle) class");
         }
-
     }
 }
-
-
-
-

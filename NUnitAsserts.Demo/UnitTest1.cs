@@ -26,7 +26,7 @@ namespace NUnitAsserts.Demo
             });
 
             Assert.That(0, Is.Zero, "Verify Is.Zero");
-            Assert.That("Hello", new AssertionHelper().StartWith("H"));
+            Assert.That("Hello", Does.StartWith("H"));
         }
     }
 }

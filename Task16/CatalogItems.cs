@@ -9,8 +9,8 @@ namespace Task16
     public class CatalogItems
     {
         Music song1 = new Music("2 + 2 = 5", 1, "Pop", "10MB", "Radiohead", 180);
-        Music song2 = new Music("BlahBlah", 2, "Pop", "5MB", "BlahBlah", 180);
-        Music song3 = new Music("BlahBlah", 3, "Pop", "5MB", "BlahBlah", 180);
+        Music song2 = new Music("Casio", 2, "Pop", "5MB", "Jungle", 180);
+        Music song3 = new Music("Dreams", 3, "Pop", "5MB", "Fleetwood Mac", 180);
 
         Film movie1 = new Film("Spider-man", 11, "Superhero movies", "15GB", "Sam Reime", "Tobey Maguire", "Kirsten Dunst");
         Film movie2 = new Film("Spider-Man: No Way Home", 12, "Superhero movies", "15GB", "Jon Watts", "Tom Holland", "Zendaya");

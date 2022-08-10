@@ -20,8 +20,7 @@ namespace Task16
             this.Category = category;
             this.Size = size; 
         }
-
-        
-
+        //contrsuctors: static (invoked first, initializes static members), default (initializes fields, properties), parameterized  
+        //static and default are always present but not always explicitly declared
     }
 }
