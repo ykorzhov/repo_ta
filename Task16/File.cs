@@ -23,9 +23,5 @@ namespace Task16
         //contrsuctors: static (invoked first, initializes static members), default (initializes fields, properties), parameterized  
         //static and default are always present but not always explicitly declared
     }
-    //comment
-    //testcomment
-    //one more test comment
-    //test comment
-    //test
+    //test trigger
 }
